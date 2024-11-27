@@ -1,0 +1,434 @@
+@font-face {
+  font-family: IRANSansX;
+  font-weight: bold;
+  src: url('@/assets/fonts/woff/IRANSansX-Bold.woff') format('woff'),
+    url('@/assets/fonts/woff2/IRANSansX-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: IRANSansX;
+  font-weight: normal;
+  src: url('@/assets/fonts/woff/IRANSansX-Regular.woff') format('woff'),
+    url('@/assets/fonts/woff2/IRANSansX-Regular.woff2') format('woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Tahoma;
+  font-size: 100%;
+  direction: rtl;
+  #__nuxt {
+    flex-grow: 1;
+    height: 100vh;
+    #__layout {
+      flex-grow: 1;
+      height: 100vh;
+    }
+  }
+  .t-loading {
+    display: contents;
+  }
+
+  --t-color-0-0-75: hsl(0, 0%, 75%);
+  --t-color-9-24-51: hsl(0, 89%, 82%);
+  --t-color-196-100-42: hsl(196, 100%, 42%);
+  --t-success-header-background: hsl(133, 21%, 50%);
+  --t-success-header-foreground: white;
+  --t-success-body-background: hsl(133, 25%, 90%);
+  --t-success-body-foreground: black;
+}
+
+body::-moz-selection,
+::selection {
+  text-shadow: none;
+  background: var(--t-color-196-100-42);
+  color: #fff;
+}
+
+@mixin scrollbar($trackColor, $thumbColor) {
+  * {
+    scrollbar-width: thick;
+    scrollbar-color: $trackColor $thumbColor;
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    background: $thumbColor;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: $trackColor;
+    border-radius: 0px;
+    border: 1px solid $trackColor;
+  }
+}
+
+.theme-d-0 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-10 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-20 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-30 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-40 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-50 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-60 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-70 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-80 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-90 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-100 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-110 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-120 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-130 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-140 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-150 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-160 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-170 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-180 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-190 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-200 {
+  --t-color-0-5-90: hsl(0, 0%, 95%);
+  --t-color-50-100-80: hsl(50, 100%, 95%);
+  // #region 0%
+  --t-color-0-80: hsl(200, 0%, 80%);
+  --t-color-0-85: hsl(200, 0%, 85%);
+  --t-color-0-96: hsl(200, 0%, 96.9%);
+  // #endregion
+
+  // #region 20%
+  --t-color-20-15: hsl(200, 20%, 15%);
+  --t-color-20-70: hsl(200, 20%, 70%);
+  --t-color-20-85: hsl(200, 20%, 85%);
+  --t-color-20-96: hsl(200, 20%, 96%);
+  // #endregion
+
+  // #region 70%
+  --t-color-70-10: hsl(200, 70%, 10%);
+  --t-color-70-25: hsl(200, 70%, 25%);
+  --t-color-70-40: hsl(200, 70%, 40%);
+  --t-color-90-70: hsl(200, 90%, 70%);
+  --t-color-70-80: hsl(200, 70%, 80%);
+  --t-color-30-90: hsl(200, 80%, 95%);
+
+  --t-color-70-97: hsl(200, 70%, 97%);
+  // #endregion
+}
+
+.theme-d-210 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-220 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-230 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-240 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-250 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-260 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-270 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-280 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-290 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-300 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-310 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-320 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-330 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-340 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-d-350 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-0 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-10 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-20 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-30 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-40 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-50 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-60 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-70 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-80 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-90 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-100 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-110 {
+  // #region 0%
+  // #endregion
+}
+
+.theme-l-120 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-130 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-140 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-150 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-160 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-170 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-180 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-190 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-200 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-210 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-220 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-230 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-240 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-250 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-260 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-270 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-280 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-290 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-300 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-310 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-320 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-330 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-340 {
+  // #region 0%
+  // #endregion
+}
+.theme-l-350 {
+  // #region 0%
+  // #endregion
+}

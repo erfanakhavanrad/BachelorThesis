@@ -1,0 +1,204 @@
+package com.tarazgroup.tws.model.pub;
+
+import com.tarazgroup.tws.util.global.TParams;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
+/**
+ * @author A.Farahani
+ * @date Dec 14 2021
+ */
+@NamedStoredProcedureQuery(
+        name = "PubShowArchiveCategory",
+        procedureName = "PubShowArchiveCategory",
+        resultClasses = {PubArchiveCategory.class},
+        parameters = {
+                @StoredProcedureParameter(name = "Filter", type = String.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "OtherFilter", type = String.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "ServerFilter", type = String.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "YearFilter", type = String.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "UserAccessFilter", type = String.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "PageFilter", type = String.class, mode = ParameterMode.IN)
+        }
+)
+
+@NamedStoredProcedureQuery(
+        name = "PubInsArchiveCategory",
+        procedureName = "PubInsArchiveCategory",
+        parameters = {
+                @StoredProcedureParameter(name = "CategoryCode", type = String.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "CategoryName", type = String.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "WorkStationID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "CreatorID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "ModifierID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "Result", type = BigDecimal.class, mode = ParameterMode.OUT),
+                @StoredProcedureParameter(name = "ErrMsg", type = String.class, mode = ParameterMode.OUT),
+                @StoredProcedureParameter(name = "LoginID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "NewID", type = BigDecimal.class, mode = ParameterMode.OUT)
+        }
+)
+
+@NamedStoredProcedureQuery(
+        name = "PubUpdArchiveCategory",
+        procedureName = "PubUpdArchiveCategory",
+        parameters = {
+                @StoredProcedureParameter(name = "CategoryID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "CategoryCode", type = String.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "CategoryName", type = String.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "WorkStationID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "ModifierID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "Result", type = BigDecimal.class, mode = ParameterMode.OUT),
+                @StoredProcedureParameter(name = "LoginID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "ErrMsg", type = String.class, mode = ParameterMode.OUT)
+        }
+)
+
+@NamedStoredProcedureQuery(
+        name = "PubDelArchiveCategory",
+        procedureName = "PubDelArchiveCategory",
+        parameters = {
+                @StoredProcedureParameter(name = "CategoryID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "Result", type = BigDecimal.class, mode = ParameterMode.OUT),
+                @StoredProcedureParameter(name = "LoginID", type = BigDecimal.class, mode = ParameterMode.IN),
+                @StoredProcedureParameter(name = "ErrMsg", type = String.class, mode = ParameterMode.OUT)
+        }
+)
+
+@Entity
+public class PubArchiveCategory extends TParams implements Serializable {
+        @Id
+        @Column(name = "CategoryID")
+        private BigDecimal categoryID;
+
+        @Column(name = "CategoryCode")
+        private String categoryCode;
+
+        @Column(name = "CategoryName")
+        private String categoryName;
+
+        @Column(name = "WorkStationID")
+        private BigDecimal workStationID;
+
+        @Column(name = "CreatorID")
+        private BigDecimal creatorID;
+
+        @Column(name = "CreateDate")
+        private Date createDate;
+
+        @Column(name = "ModifierID")
+        private BigDecimal modifierID;
+
+        @Column(name = "ModifyDate")
+        private Date modifyDate;
+
+        @Column(name = "ServerID")
+        private BigDecimal serverID;
+
+        @Column(name = "WorkStationCode")
+        private String workStationCode;
+
+        @Column(name = "WorkStationName")
+        private String workStationName;
+
+        @Column(name = "WorkStationDesc")
+        private String workStationDesc;
+
+        public BigDecimal getCategoryID() {
+                return categoryID;
+        }
+
+        public void setCategoryID(BigDecimal categoryID) {
+                this.categoryID = categoryID;
+        }
+
+        public String getCategoryCode() {
+                return categoryCode;
+        }
+
+        public void setCategoryCode(String categoryCode) {
+                this.categoryCode = categoryCode;
+        }
+
+        public String getCategoryName() {
+                return categoryName;
+        }
+
+        public void setCategoryName(String categoryName) {
+                this.categoryName = categoryName;
+        }
+
+        public BigDecimal getWorkStationID() {
+                return workStationID;
+        }
+
+        public void setWorkStationID(BigDecimal workStationID) {
+                this.workStationID = workStationID;
+        }
+
+        public BigDecimal getCreatorID() {
+                return creatorID;
+        }
+
+        public void setCreatorID(BigDecimal creatorID) {
+                this.creatorID = creatorID;
+        }
+
+        public Date getCreateDate() {
+                return createDate;
+        }
+
+        public void setCreateDate(Date createDate) {
+                this.createDate = createDate;
+        }
+
+        public BigDecimal getModifierID() {
+                return modifierID;
+        }
+
+        public void setModifierID(BigDecimal modifierID) {
+                this.modifierID = modifierID;
+        }
+
+        public Date getModifyDate() {
+                return modifyDate;
+        }
+
+        public void setModifyDate(Date modifyDate) {
+                this.modifyDate = modifyDate;
+        }
+
+        public BigDecimal getServerID() {
+                return serverID;
+        }
+
+        public void setServerID(BigDecimal serverID) {
+                this.serverID = serverID;
+        }
+
+        public String getWorkStationCode() {
+                return workStationCode;
+        }
+
+        public void setWorkStationCode(String workStationCode) {
+                this.workStationCode = workStationCode;
+        }
+
+        public String getWorkStationName() {
+                return workStationName;
+        }
+
+        public void setWorkStationName(String workStationName) {
+                this.workStationName = workStationName;
+        }
+
+        public String getWorkStationDesc() {
+                return workStationDesc;
+        }
+
+        public void setWorkStationDesc(String workStationDesc) {
+                this.workStationDesc = workStationDesc;
+        }
+}
